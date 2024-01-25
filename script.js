@@ -44,6 +44,24 @@ function countBs(input) {
     }
 
     return(counter);
+}
+
+function countChar (input, letter) {
+let str = input;
+let theLetter = letter;
+let counter = 0;
+
+if ((parseInt(str) === NaN)) {
+    return ("Not a string!");
+}
+
+for (i = 0; i < str.length - 1; i++) {
+    if (str[i] === theLetter) {
+        counter++;
+    }
+}
+
+return(counter);
 
 }
 
@@ -54,3 +72,4 @@ console.log(isEven(5));
 console.log(isEven(10));
 console.log(isEven(-2));
 console.log(countBs("TheBubbleBowl!"));
+console.log(countChar("TheSillySillySillyGoober", "S"));
