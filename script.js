@@ -43,25 +43,25 @@ function countBs(input) {
         }
     }
 
-    return(counter);
+    return (counter);
 }
 
-function countChar (input, letter) {
-let str = input;
-let theLetter = letter;
-let counter = 0;
+function countChar(input, letter) {
+    let str = input;
+    let theLetter = letter;
+    let counter = 0;
 
-if ((parseInt(str) === NaN)) {
-    return ("Not a string!");
-}
-
-for (i = 0; i < str.length - 1; i++) {
-    if (str[i] === theLetter) {
-        counter++;
+    if ((parseInt(str) === NaN)) {
+        return ("Not a string!");
     }
-}
 
-return(counter);
+    for (i = 0; i < str.length - 1; i++) {
+        if (str[i] === theLetter) {
+            counter++;
+        }
+    }
+
+    return (counter);
 
 }
 
