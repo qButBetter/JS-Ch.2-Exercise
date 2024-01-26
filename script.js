@@ -37,7 +37,7 @@ function countBs(input) {
         return ("Not a string!");
     }
 
-    for (i = 0; i < str.length - 1; i++) {
+    for (i = 0; i < str.length; i++) {
         if (str[i] === "B") {
             counter++;
         }
@@ -55,7 +55,7 @@ function countChar(input, letter) {
         return ("Not a string!");
     }
 
-    for (i = 0; i < str.length - 1; i++) {
+    for (i = 0; i < str.length; i++) {
         if (str[i] === theLetter) {
             counter++;
         }
@@ -72,4 +72,4 @@ console.log(isEven(5));
 console.log(isEven(10));
 console.log(isEven(-2));
 console.log(countBs("TheBubbleBowl!"));
-console.log(countChar("TheSillySillySillyGoober", "S"));
+console.log(countChar("TheSillySillySillyGooberS", "S"));
