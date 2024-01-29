@@ -19,7 +19,6 @@ function isEven(input) {
     let num = input;
     let output = Math.abs((num % 2));
 
-
     if (output == 0) {
         return ("true");
     }
